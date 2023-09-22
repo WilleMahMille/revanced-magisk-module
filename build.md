@@ -1,5 +1,5 @@
-YouTube: 18.19.35  
-YouTube-Extended: 18.17.43  
+YouTube: 18.32.39  
+YouTube-Extended: 18.31.40  
 
 Install [Vanced Microg](https://github.com/TeamVanced/VancedMicroG/releases) for non-root YouTube or YT Music  
 
@@ -7,59 +7,82 @@ Install [Vanced Microg](https://github.com/TeamVanced/VancedMicroG/releases) for
 
 ---
 Changelog:  
-CLI: j-hc/revanced-cli-2.22.0-all.jar  
-Integrations: inotia00/revanced-integrations-0.107.10.apk  
-Patches: inotia00/revanced-patches-2.173.10.jar  
+CLI: inotia00/revanced-cli-3.1.2-all.jar  
+Integrations: inotia00/revanced-integrations-0.117.8.apk  
+Patches: inotia00/revanced-patches-2.190.8.jar  
 
 YouTube
 ==
-- feat(youtube/default-video-quality): rollback to previous commit
-- feat(youtube/hide-general-ads): added some exceptions
-- feat(youtube/hide-seekbar): updated patch description https://github.com/inotia00/ReVanced_Extended/issues/1013
-- fix(youtube/protobuf-spoof): playing a clip will play the video from the start https://github.com/inotia00/ReVanced_Extended/issues/999
-- fix(youtube/protobuf-spoof): subtitles appear at top when you watch related shorts https://github.com/inotia00/ReVanced_Extended/issues/1011
-- fix(youtube/sponsorblock): not reflected in the patch information
+- feat(youtube): remove `optimize-resource` patch https://github.com/inotia00/ReVanced_Extended/issues/1336
+- feat(youtube/append-time-stamps-information): change patch name `enable-time-stamps-speed` → `append-time-stamps-information`
+- feat(youtube/append-time-stamps-information): users can now choose between playback speed and video quality, which users can also toggle by long-pressing on the timestamp
+- feat(youtube/custom-playback-speed): change to abstract patch
+- feat(youtube/integration): minor refactoring
+- fix(youtube/default-playback-speed): toast message is showing that the playback speed has been saved even though the `default-playback-speed` patch is not included https://github.com/inotia00/ReVanced_Extended/issues/1385
+- fix(youtube/disable-shorts-on-startup): not working on YouTube v18.31.40 https://github.com/inotia00/ReVanced_Extended/issues/1375
+- fix(youtube/hide-feed-flyout-panel): doesn't work on tablet https://github.com/inotia00/ReVanced_Extended/issues/1381
+- fix(youtube/hide-handle): patch information contains incorrect patch name
+- fix(youtube/hide-quick-action): unintentional buttons are hidden
+- fix(youtube/hide-shorts-components): no longer check navbar index when hiding the shorts header
+- fix(youtube/hide-suggestions-shelf): suggestions shelf is not hidden or playlist shelf is hidden under certain circumstances https://github.com/inotia00/ReVanced_Extended/issues/1327
+- fix(youtube/litho-filter): don't remove the buffer until the thread stops
+- fix(youtube/navber-index-hook): no longer using litho filter
+- fix(youtube/settings): alert dialog when first installed does not match with the app's theme https://github.com/inotia00/ReVanced_Extended/issues/1379
+- fix(youtube/sponsorblock): default value of `Show video length without segments` setting was changed after fetch
+- fix(youtube/spoof-player-parameter): seekbar thumbnail not showing in shorts video
+- fix(youtube/spoof-player-parameter): watching previews in your feed is added to your watch history https://github.com/inotia00/ReVanced_Extended/issues/1313
+- refactor(youtube/default-video-quality): reimplemented with new method
 - feat(youtube/translations): update translation
-`Chinese Simplified`, `Greek`, `Indonesian`, `Italian`, `Japanese`, `Russian`, `Spanish`, `Vietnamese`
+`Arabic`, `Chinese Traditional`, `Japanese`, `Korean`, `Vietnamese`
 
 
 YouTube Music
 ==
-- feat(music/hide-new-playlist-button): change patch name https://github.com/inotia00/ReVanced_Extended/issues/983
+- feat(music): add `custom-playback-speed` patch https://github.com/inotia00/ReVanced_Extended/issues/1367
+- feat(music): add `hide-account-menu` patch https://github.com/inotia00/ReVanced_Extended/issues/1361
+- feat(music): add `hide-handle` patch
+- feat(music): add `hide-terms-container` patch
+- feat(music): add `import/export-settings` patch
+- feat(music): add `start-page` patch
+- feat(music): integrate `hide-navigation-label`, `hide-sample-buttons`, `hide-upgrade-button` into `hide-navigation-bar-component`
+- feat(music): remove `optimize-resource` patch
+- feat(music/exclusive-audio-playback): now patch enables the `Don't play podcast videos` setting
+- feat(music/hide-cast-button): patch now hides the cast banner inside the player https://github.com/inotia00/ReVanced_Extended/issues/252
+- feat(music/hide-new-playlist-button): change setting description
+- feat(music/replace-dismiss-queue): add `Continue watching` settings
+- feat(music/settings): change category name `Bottom Player` → `Action Bar`
+- feat(music/settings): create `Video` category
+- feat(music/video-information): integrate `video-id` patch
+- fix(music/hide-cast-button): change patch description
+- fix(music/hide-sample-button): unintended buttons are hidden
+- fix(music/hide-upgrade-button): library tab stuck when opening device files https://github.com/inotia00/ReVanced_Extended/issues/906
+- fix(music/remember-video-quality): quality auto value was saved
+- fix(music/replace-dismiss-queue): audio does not stop when intent chooser is displayed
+- fix(music/settings): fix invalid class name
+- fix(music/spoof-app-version): remove unintentional dependencies
+- refactor(music/remember-video-quality): reimplemented with new method
 - feat(music/translations): update translation
-`Chinese Simplified`
+`Bengali`, `Brazilian`, `Dutch`, `Japanese`, `Korean`, `Polish`, `Russian`, `Turkish`, `Vietnamese`
 
 
-※ Compatible ReVanced Manager: v1.1.0
+Etc
+==
+- build: update dependency
+
+
+※ Compatible ReVanced Manager: [RVX Manager v1.9.7 (fork)](https://github.com/inotia00/revanced-manager/releases/tag/v1.9.7)
 [Crowdin translation]
-- [European Countries](https://crowdin.com/project/revancedextendedeu)
-- [Other Countries](https://crowdin.com/project/revancedextended)
+- [YT Music](https://crowdin.com/project/revanced-music-extended)
 ---
-CLI: j-hc/revanced-cli-2.22.0-all.jar  
-Integrations: revanced/revanced-integrations-0.109.0.apk  
-Patches: revanced/revanced-patches-2.175.0.jar  
+CLI: j-hc/revanced-cli-3.2.0-all.jar  
+Integrations: ReVanced/revanced-integrations-0.117.1.apk  
+Patches: ReVanced/revanced-patches-2.190.0.jar  
 
-### [2.175.0](https://github.com/revanced/revanced-patches/compare/v2.174.0...v2.175.0) (2023-05-31)
+### [2.190.0](https://github.com/ReVanced/revanced-patches/compare/v2.189.0...v2.190.0) (2023-09-03)
 ### Bug Fixes
-* **settings:** sort setting preferences using lowercase ([#2312](https://github.com/revanced/revanced-patches/issues/2312)) ([2743a95](https://github.com/revanced/revanced-patches/commit/2743a95b417a6023799035e30631e7b3a68bcc45))
-* **spoof-wifi-connection:** use updated instruction indices ([#2199](https://github.com/revanced/revanced-patches/issues/2199)) ([76fb700](https://github.com/revanced/revanced-patches/commit/76fb700884dae5b71a57f9530fad9d4a98ba0af0))
-* **youtube/downloads:** rename patch to `external-downloads` ([#2274](https://github.com/revanced/revanced-patches/issues/2274)) ([4480911](https://github.com/revanced/revanced-patches/commit/4480911e0b056f2148616a0c2af6b4ab7c482c3b))
-* **youtube/hide-info-cards:** fix hide-info-cards setting does not work ([#2246](https://github.com/revanced/revanced-patches/issues/2246)) ([72773ac](https://github.com/revanced/revanced-patches/commit/72773ac56987753fac6c0087d048b4378a3dd360))
-* **youtube/hide-player-buttons:** fix previous/next button showing if previous video exists ([#2261](https://github.com/revanced/revanced-patches/issues/2261)) ([91d1aab](https://github.com/revanced/revanced-patches/commit/91d1aabd32be1607019bc443fb06284ca3343e9d))
-* **youtube/hide-shorts-components:** clarify settings switch ([#2276](https://github.com/revanced/revanced-patches/issues/2276)) ([3e6d052](https://github.com/revanced/revanced-patches/commit/3e6d0528b287ded401dacdcea698d4ec97b926ee))
-* **youtube/integrations:** fix playback of embedded videos ([#2304](https://github.com/revanced/revanced-patches/issues/2304)) ([1dffbaf](https://github.com/revanced/revanced-patches/commit/1dffbaf0aa73f0f703516648d5cd935000fa2770))
-* **youtube/remember-video-quality:** fix typo in video resolutions ([#2323](https://github.com/revanced/revanced-patches/issues/2323)) ([a99cef8](https://github.com/revanced/revanced-patches/commit/a99cef87b40b67a5feb97999fb4f2925ea80b42e))
-* **youtube/remove-player-controls-background:** use correct patch name and description ([8732a84](https://github.com/revanced/revanced-patches/commit/8732a84422087fca7e9e1635a0b1d8d2cbf034f4))
-* **youtube/theme:** use dynamic background color for custom splash screen ([#2319](https://github.com/revanced/revanced-patches/issues/2319)) ([28594f3](https://github.com/revanced/revanced-patches/commit/28594f3eeaf99fa32ee57214ebbc4342529c6694))
+* **Infinity for Reddit - Spoof client:** Support latest version ([8a5311b](https://github.com/ReVanced/revanced-patches/commit/8a5311b1e645ca2aab1e416d647cf52bf0be6e7f))
 ### Features
-* **nfctoolsse:** add `unlock-pro` patch ([#2272](https://github.com/revanced/revanced-patches/issues/2272)) ([9789ad3](https://github.com/revanced/revanced-patches/commit/9789ad30ff82d9bb99e870dc8053775dc222a010))
-* **remove-screen-capture-restriction:** remove app constraint ([#2260](https://github.com/revanced/revanced-patches/issues/2260)) ([49ce47c](https://github.com/revanced/revanced-patches/commit/49ce47c3eed6a1626674d0f60ae0fdbe349e804b))
-* **scbeasy:** add `remove-debugging-detection` patch ([#2287](https://github.com/revanced/revanced-patches/issues/2287)) ([53d91e3](https://github.com/revanced/revanced-patches/commit/53d91e32183663b0aa70994cc4e1d8ae5eb8c8e4))
-* **tiktok:** remove compatibility version constraints ([#2306](https://github.com/revanced/revanced-patches/issues/2306)) ([a12c4bb](https://github.com/revanced/revanced-patches/commit/a12c4bb1610234d19b4ac86cd57bb09335566b68))
-* **youtube/general-ads:** merge `hide-get-premium` patch into `general-ads` patch ([5195dd8](https://github.com/revanced/revanced-patches/commit/5195dd8936d63c482dbcb2cd0e7e9aab3c75954e))
-* **youtube/hide-seekbar:** more fine grained hiding of seekbar ([#2252](https://github.com/revanced/revanced-patches/issues/2252)) ([0f07bf4](https://github.com/revanced/revanced-patches/commit/0f07bf467a4aa06c9bcdf60a2498d88eea8c1429))
-* **youtube/hide-shorts-components:** hide channel bar & sound button ([749c83d](https://github.com/revanced/revanced-patches/commit/749c83d068c2201ed6f29047d5428d1072924960))
-* **youtube/hide-shorts-components:** hide shorts info panel ([#2278](https://github.com/revanced/revanced-patches/issues/2278)) ([a5b323d](https://github.com/revanced/revanced-patches/commit/a5b323d1d9e5b175c93f0b29732eb1123b83bab7))
-* **youtube/navigation-buttons:** use a better preference screen title ([5d7772b](https://github.com/revanced/revanced-patches/commit/5d7772be942c72e05644eca3f68d2bd6b9762d26))
+* **Photomath:** Support latest version ([5a2cad0](https://github.com/ReVanced/revanced-patches/commit/5a2cad077f03880ee1417c5cfd448bbdea4c07e2))
+* **Twitch:** Support version `16.1.0` ([#2923](https://github.com/ReVanced/revanced-patches/issues/2923)) ([d9834a9](https://github.com/ReVanced/revanced-patches/commit/d9834a9abb43390af4cb33f5dd5a0e2d3b7060e2))
 
 ---  
