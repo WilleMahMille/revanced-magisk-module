@@ -1,5 +1,5 @@
-YouTube: 18.39.40  
-YouTube-Extended: 18.33.40  
+YouTube: 18.40.33  
+YouTube-Extended: 18.40.33  
 
 Install [Vanced Microg](https://github.com/TeamVanced/VancedMicroG/releases) for non-root YouTube or YT Music  
 
@@ -7,66 +7,65 @@ Install [Vanced Microg](https://github.com/TeamVanced/VancedMicroG/releases) for
 
 ---
 Changelog:  
-CLI: inotia00/revanced-cli-3.1.4-all.jar  
-Integrations: inotia00/revanced-integrations-0.117.24.apk  
-Patches: inotia00/revanced-patches-2.190.24.jar  
+CLI: inotia00/revanced-cli-4.0.3-all.jar  
+Integrations: inotia00/revanced-integrations-0.119.8.apk  
+Patches: inotia00/revanced-patches-2.193.8.jar  
 
 YouTube
 ==
-- feat(youtube/default-video-quality): add `Skip dummy segment` setting (Experimental Flags)
-- feat(youtube/litho-filter): commit reflected from official ReVanced
-- feat(youtube/video-id): removes unnecessary fingerprints
-- fix(youtube/disable-haptic-feedback): force close occurs in YouTube v18.27.36
-- fix(youtube/enable-minimized-playback): change the method by which patches are applied
-- fix(youtube/overlay-buttons): radio buttons in speed dialog always remember last selected value https://github.com/inotia00/ReVanced_Extended/issues/1484
-- fix(youtube/swipe-controls): auto brightness value is not loaded properly https://github.com/inotia00/ReVanced_Extended/issues/1483
-- rollback(youtube/hide-shorts-components): rollback hide the shorts shelf in search results (sometimes they hide the shorts section in the channel information)
-- feat(youtube/translations): update translation
-`Arabic`, `Brazilian`, `Bulgarian`, `Chinese Traditional`, `French`, `Hungarian`, `Italian`, `Japanese`, `Korean`, `Polish`, `Russian`, `Spanish`, `Turkish`, `Ukrainian`, `Vietnamese`
+- feat(YouTube): add support version `v18.34.38`, `v18.35.36`, `v18.36.39`
+- feat(YouTube): drop support version `v18.22.37`, `v18.23.36`
+- fix(YouTube/Alternative thumbnails): Add check for DeArrow API https://github.com/inotia00/revanced-integrations/pull/22
+- fix(YouTube/Default video quality): use more appropriate settings label https://github.com/inotia00/ReVanced_Extended/issues/1509
+- fix(YouTube/Enable new splash animation): integrations sometimes return invalid values
+- fix(YouTube/Minimized playback): controlling notification control nothing https://github.com/inotia00/ReVanced_Extended/issues/1519
+- fix(YouTube/Overlay buttons): chang description of `Hook download button`
+- feat(YouTube/Translations): update translation
+`Arabic`, `Brazilian`, `Bulgarian`, `Chinese Traditional`, `French`, `Greek`, `Hungarian`, `Indonesian`, `Italian`, `Japanese`, `Korean`, `Polish`, `Russian`, `Spanish`, `Turkish`, `Ukrainian`, `Vietnamese`
 
 
 YouTube Music
 ==
-- feat(music): add support version `v6.22.51`
-- feat(music/litho-filter): commit reflected from official ReVanced
-- feat(music/replace-cast-button): change setting description
-- feat(music/video-information): removes unnecessary fingerprints
-- fix(music/enable-playback-speed): radio buttons in speed dialog always remember last selected value https://github.com/inotia00/ReVanced_Extended/issues/1484
-- fix(music/hook-download-button): slightly improved action bar loading time
-- fix(music/player-type-hook): player type is not hooked properly
-- fix(music/return-youtube-dislike): wrong layout applied in RTL layout https://github.com/inotia00/ReVanced_Extended/issues/1475
-- feat(music/translations): update translation
-`Greek`, `Russian`
+- feat(YouTube Music): add `Enable new player background` patch
+- feat(YouTube Music): remove `Enable new layout` patch https://github.com/inotia00/ReVanced_Extended/issues/1518#issuecomment-1759473731
+- fix(YouTube Music/Enable color match player): `Enable color match player` patch not working in new player background
+- fix(YouTube Music/Spoof app version): description of the side effect is too long
+- feat(YouTube Music/Translations): update translation
+`Brazilian`, `Chinese Traditional`, `Dutch`, `Greek`, `Indonesian`, `Korean`, `Polish`, `Russian`, `Spanish`, `Turkish`, `Ukrainian`, `Vietnamese`
 
 
 Etc
 ==
-- build: bump dependencies
+- When updating from YouTube v18.33.40 or lower to YouTube v18.34.xx or later, a clean install is recommended.
 
 
-※ Compatible ReVanced Manager: [RVX Manager v1.10.3 (fork)](https://github.com/inotia00/revanced-manager/releases/tag/v1.10.3)
+※ Compatible ReVanced Manager: [RVX Manager v1.11.3 (fork)](https://github.com/inotia00/revanced-manager/releases/tag/v1.11.3)
 [Crowdin translation]
 - [YouTube/European Countries](https://crowdin.com/project/revancedextendedeu)
 - [YouTube/Other Countries](https://crowdin.com/project/revancedextended)
 - [YT Music](https://crowdin.com/project/revanced-music-extended)
 
-
 ---
 CLI: j-hc/revanced-cli-4.0.1-all.jar  
-Integrations: ReVanced/revanced-integrations-0.119.0.apk  
-Patches: ReVanced/revanced-patches-2.193.0.jar  
+Integrations: ReVanced/revanced-integrations-0.119.2.apk  
+Patches: ReVanced/revanced-patches-2.194.0.jar  
 
-### [2.193.0](https://github.com/ReVanced/revanced-patches/compare/v2.192.0...v2.193.0) (2023-10-08)
+### [2.194.0](https://github.com/ReVanced/revanced-patches/compare/v2.193.0...v2.194.0) (2023-10-12)
+
+
 ### Bug Fixes
-* **Boost for Reddit - Spoof client:** Set user-agent for OAuth requests to fix login ([2223951](https://github.com/ReVanced/revanced-patches/commit/2223951fa16011d735ef4c4cda11eba13403f62d))
-* Consolidate patches ([#3098](https://github.com/ReVanced/revanced-patches/issues/3098)) ([02f767d](https://github.com/ReVanced/revanced-patches/commit/02f767df3cd1b2d0155e7360d2b26fa5d1cfcace))
-* **Infinity for Reddit - Spoof client:** Set user-agent for OAuth requests to fix login ([a710f05](https://github.com/ReVanced/revanced-patches/commit/a710f05bb46156e66ca56aa4731e1028f459c414))
-* **Sync for Reddit - Spoof client:** Set user-agent for OAuth requests to fix login ([a48c4a7](https://github.com/ReVanced/revanced-patches/commit/a48c4a7cc1dbb3ecfce2e345240bca8142740b77))
-* **YouTube:** Sort settings alphabetically despite punctuation ([#3097](https://github.com/ReVanced/revanced-patches/issues/3097)) ([46e3c97](https://github.com/ReVanced/revanced-patches/commit/46e3c97d24e282e4d7d444603af4fb475ae03315))
+
+* **YouTube - ReturnYouTubeDislike:** Fix dislikes not showing on Shorts ([#3133](https://github.com/ReVanced/revanced-patches/issues/3133)) ([0e8a286](https://github.com/ReVanced/revanced-patches/commit/0e8a2868e8e4328a6f02fa31537abc5e5ed220eb))
+* **YouTube - Spoof app version:** Recommend clearing the app data after turning off spoofing ([#3134](https://github.com/ReVanced/revanced-patches/issues/3134)) ([166bf5b](https://github.com/ReVanced/revanced-patches/commit/166bf5b1aec5f8868b3895f7e24d2abc9037a7de))
+
+
 ### Features
-* **YouTube - Hide shorts components:** Hide subscribe button when paused separately from subscribe button ([52d07ec](https://github.com/ReVanced/revanced-patches/commit/52d07ecd39b1c37cfbfbfa699ccbef849600d9f8))
-* **YouTube - Return YouTube Dislike:** Support version `18.37.36` ([#3061](https://github.com/ReVanced/revanced-patches/issues/3061)) ([fe11db7](https://github.com/ReVanced/revanced-patches/commit/fe11db70eafb481db87231d3db22eafbaa479871))
-* **YouTube:** Add `Disable fine scrubbing gesture` patch ([6c9baf2](https://github.com/ReVanced/revanced-patches/commit/6c9baf22614b1be4870be684915445f7a138cf31))
-* **YouTube:** Bump compatibility to `18.38.44` ([#3071](https://github.com/ReVanced/revanced-patches/issues/3071)) ([a73868c](https://github.com/ReVanced/revanced-patches/commit/a73868cb270295c871a9f1e4d543f728d6152146))
+
+* **CieID:** Add `bypass root check` patch ([#3011](https://github.com/ReVanced/revanced-patches/issues/3011)) ([20cfa8a](https://github.com/ReVanced/revanced-patches/commit/20cfa8a5cdebc7e81128c820a2aa01415a068320))
+* Do not support reading options from a properties file ([3d1c0c1](https://github.com/ReVanced/revanced-patches/commit/3d1c0c1a958271c358755220b97b9dd92eb81d54))
+* Improve option descriptions and titles ([9f86daa](https://github.com/ReVanced/revanced-patches/commit/9f86daa82271591bcaa9144d300a4810458fdd28))
+
+
+
 
 ---  
