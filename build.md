@@ -8,27 +8,25 @@ Install [Vanced Microg](https://github.com/TeamVanced/VancedMicroG/releases) for
 ---
 Changelog:  
 CLI: inotia00/revanced-cli-4.1.1-all.jar  
-Integrations: inotia00/revanced-integrations-0.121.7.apk  
-Patches: inotia00/revanced-patches-2.196.7.jar  
+Integrations: inotia00/revanced-integrations-0.123.1.apk  
+Patches: inotia00/revanced-patches-2.199.1.jar  
 
 YouTube
 ==
-- feat(YouTube): add support version `v18.45.41`
-- feat(YouTube): separate the `Hide channel profile components` patch from `Hide layout components` patch
-- feat(YouTube/Hide channel profile components): add `Hide 'For You' shelf` settings https://github.com/inotia00/ReVanced_Extended/issues/1697
-- feat(YouTube/Hide description components): add `Hide podcast sections` settings
-- fix(YouTube/Enable wide search bar): even if `Enable Wide Search Bar` is turned off, the toolbar of You tab is replaced if `Enable wide search bar in you tab` is turned on
-- fix(YouTube/Hide general ads): rollback legacy code
-- fix(YouTube/Return YouTube Dislike): match to official ReVanced code
-- fix(YouTube/Spoof player parameters): change response waiting time
+- fix(YouTube/Default video quality): `Skipped preloaded buffer` is also applied to live stream video
+- fix(YouTube/Hide mix playlists): check if the byte parameter is null
+- fix(YouTube/Minimized playback): buffer symbol showing up instead of play button https://github.com/inotia00/ReVanced_Extended/issues/1482
+- fix(YouTube/Return YouTube Dislike): improve layout padding
+- fix(YouTube/SponsorBlock): skip segments breaks autoplay https://github.com/inotia00/ReVanced_Extended/issues/1714
+- fix(YouTube/Spoof player parameters): frozen video on playback start
 - feat(YouTube/Translations): update translation
-`Arabic`, `Chinese Traditional`, `French`, `Hungarian`, `Italian`, `Japanese`, `Korean`, `Polish`, `Russian`, `Spanish`, `Turkish`, `Ukrainian`, `Vietnamese`
+`Bengali`, `Brazilian`, `Bulgarian`, `French`, `Greek`, `Hungarian`, `Indonesian`, `Italian`, `Japanese`, `Korean`, `Polish`, `Russian`, `Spanish`, `Turkish`
 
 
 YouTube Music
 ==
 - feat(YouTube Music/Translations): update translation
-`Chinese Traditional`, `Dutch`, `French`, `Japanese`, `Polish`, `Romanian`, `Russian`, `Turkish`, `Ukrainian`, `Vietnamese`
+`French`, `Greek`, `Indonesian`, `Japanese`, `Korean`
 
 
 Etc
@@ -45,18 +43,15 @@ Etc
 
 ---
 CLI: j-hc/revanced-cli-4.1.0-all.jar  
-Integrations: ReVanced/revanced-integrations-0.122.1.apk  
-Patches: ReVanced/revanced-patches-2.198.0.jar  
+Integrations: ReVanced/revanced-integrations-0.123.0.apk  
+Patches: ReVanced/revanced-patches-2.199.0.jar  
 
-### [2.198.0](https://github.com/ReVanced/revanced-patches/compare/v2.197.0...v2.198.0) (2023-11-19)
-
-
+### [2.199.0](https://github.com/ReVanced/revanced-patches/compare/v2.198.0...v2.199.0) (2023-11-20)
 ### Bug Fixes
-
-* **YouTube - ReturnYouTubeDislike:** Improve layout padding ([#3291](https://github.com/ReVanced/revanced-patches/issues/3291)) ([630b067](https://github.com/ReVanced/revanced-patches/commit/630b067b1828476708fd019e84153b0fb5e25d1c))
-
-
+* **Twitch - Settings:** Constrain to last working version ([941c1dd](https://github.com/ReVanced/revanced-patches/commit/941c1dd5cf9f43b4f6d023eacd6cfb31d87c2cd3))
+* **YouTube - Settings:** Remove unnecessary punctuation ([#3301](https://github.com/ReVanced/revanced-patches/issues/3301)) ([c50ee82](https://github.com/ReVanced/revanced-patches/commit/c50ee8281f2b90a2721839047bdc8cd59c4c913a))
+* **Yuka - Unlock premium:** Constrain to last working version ([81900fb](https://github.com/ReVanced/revanced-patches/commit/81900fb8db79284f57b5fd9e9ee0fe97cc0e7451))
 ### Features
+* **YouTube:** Add `Disable rolling number animations` patch ([#3298](https://github.com/ReVanced/revanced-patches/issues/3298)) ([a0121ae](https://github.com/ReVanced/revanced-patches/commit/a0121ae7b60de88f0f2113ad0cefdb538f370780))
 
-* **YouTube - Custom branding:** Add 
 ---  
