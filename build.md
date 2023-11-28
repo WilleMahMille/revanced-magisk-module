@@ -1,5 +1,5 @@
-YouTube: 18.45.41  
-YouTube-Extended: 18.45.41  
+YouTube: 18.45.43  
+YouTube-Extended: 18.45.43  
 
 Install [Vanced Microg](https://github.com/TeamVanced/VancedMicroG/releases) for non-root YouTube or YT Music  
 
@@ -7,49 +7,36 @@ Install [Vanced Microg](https://github.com/TeamVanced/VancedMicroG/releases) for
 
 ---
 Changelog:  
-CLI: inotia00/revanced-cli-4.1.1-all.jar  
-Integrations: inotia00/revanced-integrations-0.123.1.apk  
-Patches: inotia00/revanced-patches-2.199.1.jar  
+CLI: inotia00/revanced-cli-4.2.1-all.jar  
+Integrations: inotia00/revanced-integrations-0.124.1.apk  
+Patches: inotia00/revanced-patches-2.201.1.jar  
 
 YouTube
 ==
-- fix(YouTube/Default video quality): `Skipped preloaded buffer` is also applied to live stream video
-- fix(YouTube/Hide mix playlists): check if the byte parameter is null
-- fix(YouTube/Minimized playback): buffer symbol showing up instead of play button https://github.com/inotia00/ReVanced_Extended/issues/1482
-- fix(YouTube/Return YouTube Dislike): improve layout padding
-- fix(YouTube/SponsorBlock): skip segments breaks autoplay https://github.com/inotia00/ReVanced_Extended/issues/1714
-- fix(YouTube/Spoof player parameters): frozen video on playback start
-- feat(YouTube/Translations): update translation
-`Bengali`, `Brazilian`, `Bulgarian`, `French`, `Greek`, `Hungarian`, `Indonesian`, `Italian`, `Japanese`, `Korean`, `Polish`, `Russian`, `Spanish`, `Turkish`
-
-
-YouTube Music
-==
-- feat(YouTube Music/Translations): update translation
-`French`, `Greek`, `Indonesian`, `Japanese`, `Korean`
-
-
-Etc
-==
-- build: bump dependencies
-- when updating from YouTube v18.33.40 or lower to YouTube v18.34.xx or later, a clean install is recommended.
-
-
-※ Compatible ReVanced Manager: [RVX Manager v1.15.1 (fork)](https://github.com/inotia00/revanced-manager/releases/tag/v1.15.1)
-[Crowdin translation]
-- [YouTube/European Countries](https://crowdin.com/project/revancedextendedeu)
-- [YouTube/Other Countries](https://crowdin.com/project/revancedextended)
-- [YT Music](https://crowdin.com/project/revanced-music-extended)
-
+- feat(YouTube): add support version `v18.45.43`
+- feat(YouTube/Hide description components): add `Hide shopping links` settings
+- feat(YouTube/Hide navigation buttons): add `Hide notifications button` settings
+- feat(YouTube/Hide shorts components): now hiding all shorts toolbar components does not hide the entire shorts toolbar (close https://github.com/inotia00/ReVanced_Extended/issues/1735)
+- feat(YouTube/Overlay buttons): removed `pause after repeat` feature as it was likely to be buggy (close https://github.com/inotia00/ReVanced_Extended/issues/1736)
+- feat(YouTube/Settings): now `Import / Export settings` exportable as text as well as file
+- feat(YouTube/Settings): now `Import / Export settings` will not only `Revanced Extended settings`, but also `Return YouTube Dislike settings` and `SponsorBlock settings`
+- feat(YouTube/Spoof app version): add target version 18.38.45 - Restore old default video quality behavior
+- feat(YouTube/Swipe controls): restore `press-to-swipe gesture` and `press-to-swipe haptic feedback` settings
+- fix(YouTube): replace variables declared as `List` with `Array`
+- fix(YouTube/BrowseId): app crashes when browseId is not initialized
+- fix(YouTube/Enable tablet layout): respect the original device layout
+- fix(YouTube/Enable wide search bar): `Enable wide search bar` patch restores the old style search bar https://github.com/inotia00/ReVanced_Extended/issues/1733
+- fix(YouTube/Hide navigation buttons): update side effect of `Switch create with notifications button` setting (close https://github.com/inotia00/ReVanced_Extended/issues/680)
+- fix(YouTube/Hide shorts components): shorts header sometimes not hidden
+- fix(YouTube/MicroG support): 
 ---
 CLI: j-hc/revanced-cli-4.1.0-all.jar  
-Integrations: ReVanced/revanced-integrations-0.124.0.apk  
-Patches: ReVanced/revanced-patches-2.201.0.jar  
+Integrations: ReVanced/revanced-integrations-0.124.1.apk  
+Patches: ReVanced/revanced-patches-2.201.1.jar  
 
-### [2.201.0](https://github.com/ReVanced/revanced-patches/compare/v2.200.0...v2.201.0) (2023-11-23)
+#### [2.201.1](https://github.com/ReVanced/revanced-patches/compare/v2.201.0...v2.201.1) (2023-11-27)
 ### Bug Fixes
-* **YouTube - Enable tablet layout:** Respect the original device layout ([b2c5bab](https://github.com/ReVanced/revanced-patches/commit/b2c5babf3fd9ad73daa06e03f4830a9dd7199d0c))
-### Features
-* **YouTube - Hide ads:** Hide shopping links in video description ([0c875a1](https://github.com/ReVanced/revanced-patches/commit/0c875a106308ae9747ae998d75b84db1c336762b))
-* **YouTube - Hide layout components:** Hide 
+* **Spotify - Hide premium navbar:** Support latest version ([b87005d](https://github.com/ReVanced/revanced-patches/commit/b87005de0c40293f85d3997f43b353a87a925156))
+* **YouTube - Hide layout components:** Clarify custom filter usage ([cc16db5](https://github.com/ReVanced/revanced-patches/commit/cc16db56d1c9925852265fcebb459d9620cd1b92))
+
 ---  
